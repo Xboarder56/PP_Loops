@@ -17,29 +17,37 @@ public class PP_Loops extends ConsoleProgram
 		/**Set the size of the applet*/
 		setSize(500,400);
 		
-		/**Set the size of the applet*/
+		/**Calles the methods for the project*/
 		forLoop();
+		println();
 		whileLoop();
+		println();
 		nestedLoop();
 		
 		
 		
 	}
-	
+
+	/**Create a public method called forLoop*/
 	public void forLoop()
 	{
+		/**Starts counting from 4 to 10 by +1*/
 		for(int i=4; i<11; i++)
 			{
 				print(i+" ");
 			}
 		
 		println();
+		
+		/**Counts down from 6 to 0 by -1*/
 		for(int i=6; i>0; i--)
 			{
 				print(i+" ");
 			}
 		
 		println();
+		
+		/**Counts from 2 to 16 counting by twos*/
 		for(int i=2; i<18; i++)
 			{
 				print(i+" ");
@@ -47,6 +55,8 @@ public class PP_Loops extends ConsoleProgram
 			}
 		
 		println();
+		
+		/**Counts down from 19 to 5 by twos*/
 		for(int i=19; i>4; i--)
 			{
 				print(i+" ");
@@ -54,17 +64,19 @@ public class PP_Loops extends ConsoleProgram
 			}
 		
 		println();
+		
+		/**Count up by 8 start at 7 ending at 40*/
 		for(int i=7; i<40; i+=7)
 			{
 				print(i+" ");
 				i++;
 			}
 		
+		/**Count up to 65 by i everytime*/
 		println();
 		for(int i=2; i<65; i+=i)
 			{
 				print(i+" ");
-				//i++;
 			}
 	}
 	
@@ -72,7 +84,7 @@ public class PP_Loops extends ConsoleProgram
 	{
 		println();
 		int count = 1;
-		int n = readInt("Enter a whole number");
+		int n = readInt("Enter a whole number: ");
 		
 		while(count <=n)
 			{
@@ -81,9 +93,12 @@ public class PP_Loops extends ConsoleProgram
 			}
 		
 		println();
+		
+		
 
 		
 	}
+	
 	
 	public void nestedLoop()
 	{
