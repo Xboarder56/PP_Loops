@@ -82,6 +82,7 @@ public class PP_Loops extends ConsoleProgram
 	
 	public void whileLoop()
 	{
+		/**Init count to 1 and have the user enter a number to count up to. */
 		println();
 		int count = 1;
 		int n = readInt("Enter a whole number: ");
@@ -94,6 +95,14 @@ public class PP_Loops extends ConsoleProgram
 		
 		println();
 		
+		int sum = 0;
+		for (int i = 1; i <=10; i++)
+			{
+				
+	            sum = sum + i;
+	           
+			}
+		print("The sum is: " + sum);
 		
 
 		
