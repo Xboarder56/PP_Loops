@@ -1,8 +1,7 @@
 /**
- * Animated_Bubbles.java
+ * PP_LOOPS
  * @author Garrett J. Beasley
- * 10/06/2014
- * Draws a House Picture
+ * 10/15/2014
  */
 
 
@@ -18,11 +17,64 @@ public class PP_Loops extends ConsoleProgram
 		/**Set the size of the applet*/
 		setSize(500,400);
 		
-		/**Gathers the inputs from the user and stores them in a variable*/
-		String name = readLine("Enter your name:");
-		print(name);
+		/**Set the size of the applet*/
+		forLoop();
+		whileLoop();
+		nestedLoop();
 		
 		
+		
+	}
+	
+	public void forLoop()
+	{
+		for(int i=4; i<11; i++)
+			{
+				print(i+" ");
+			}
+		
+		println();
+		for(int i=6; i>0; i--)
+			{
+				print(i+" ");
+			}
+		
+		println();
+		for(int i=2; i<18; i++)
+			{
+				print(i+" ");
+				i++;
+			}
+		
+		println();
+		for(int i=19; i>4; i--)
+			{
+				print(i+" ");
+				i--;
+			}
+		
+		println();
+		for(int i=7; i<40; i+=7)
+			{
+				print(i+" ");
+				i++;
+			}
+		
+		println();
+		for(int i=2; i<65; i+=i)
+			{
+				print(i+" ");
+				//i++;
+			}
+	}
+	
+	public void whileLoop()
+	{
+		
+	}
+	
+	public void nestedLoop()
+	{
 		
 	}
 }
