@@ -70,11 +70,68 @@ public class PP_Loops extends ConsoleProgram
 	
 	public void whileLoop()
 	{
+		println();
+		int count = 1;
+		int n = readInt("Enter a whole number");
+		
+		while(count <=n)
+			{
+				print(count + " ");
+				count++;
+			}
+		
+		println();
+
 		
 	}
 	
 	public void nestedLoop()
 	{
 		
+		println();
+		/**Print 1-9 for 3 rows*/
+		for(int i=1; i<=3; i++)
+		{
+			println();
+			for(int j=1; j<10; j++)
+				{
+					print(j+" ");
+				}
+		}
+		
+		println();
+		/**Print ***** for 5 rows*/
+		for(int i=1; i<=5; i++)
+		{
+			println();
+			println();
+			for(int j=1; j<=5; j++)
+				{
+					print("*");
+				}
+		}
+		
+		println();
+		/**Print *********** for 2 rows*/
+		for(int i=1; i<=2; i++)
+		{
+			println();
+			println();
+			for(int j=1; j<=10; j++)
+				{
+					print("*");
+				}
+		}
+		
+		println();
+		/**Print for 2 rows*/
+		for(int i=1; i<=5; i++)
+		{
+			println();
+			for(int j=1; j<=i; j++)
+				{
+					print("*");
+				}
+		}
 	}
 }
